@@ -1,0 +1,73 @@
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-icon {
+    margin-right: 20px;
+    cursor: pointer;
+    color: #1e3c72;
+}
+
+.header-icon:hover {
+    color: #2a5298;
+}
+
+.header-center {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.user-name {
+    margin-left: 8px;
+    color: #ef0000;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color: #ef0000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logout-button:hover {
+    color: #dc3545; /* Change to your preferred hover color */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .search-icon {
+    margin-right: 8px;
+    color: #555;
+  }
+  
+  .search-bar input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  

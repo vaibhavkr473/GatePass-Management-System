@@ -1,0 +1,158 @@
+/* src/components/WardenDashboard.css */
+
+.dashboard-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    position: relative;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-icon {
+    cursor: pointer;
+    color: #ef0000;
+    transition: color 0.2s ease-in-out;
+}
+
+.header-icon:hover {
+    color: #cd0b0e;
+}
+
+.header-center h2 {
+    margin: 0;
+    color: #ef0000;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1e3c72;
+}
+
+.user-icon {
+    color: #ef0000;
+}
+
+.user-name {
+    font-weight: 500;
+}
+
+.logout-button {
+    background-color: transparent;
+    border: none;
+    color: #ef0000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.logout-button:hover {
+    color: #a71d2a;
+}
+
+.dashboard-main {
+    margin-top: 30px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.table-primary th {
+    background-color: #1e3c72;
+    color: #fff;
+}
+
+.btn-success, .btn-danger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-success svg, .btn-danger svg {
+    margin-right: 5px;
+}
+
+.loading, .error {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #1e3c72;
+    margin-top: 50px;
+}
+
+.error {
+    color: #dc3545;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .header-left, .header-center, .header-right {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .gatepass-card {
+        max-width: 90%;
+    }
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-icon {
+    margin-right: 8px;
+    color: #555;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
